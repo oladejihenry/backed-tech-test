@@ -30,4 +30,4 @@ Route::post('/comments', [CommentController::class, 'store']);
 Route::put('/update-comment/{id}',[CommentController::class, 'update']);
 
 //Delete Comment
-Route::delete('/update-comment/{id}',[CommentController::class, 'delete']);
+Route::delete('/delete-comment/{id}',[CommentController::class, 'delete']);
