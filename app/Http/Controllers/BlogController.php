@@ -17,10 +17,6 @@ class BlogController extends Controller
     //Get a single blog with comment(s)
     public function show(Blog $blog)
     {
-        // $blog = Blog::with('comments')->find($id)->get();
-
-        // return response()->json(['blog'=>$blog]);
-
         return $blog->load('comments');
     }
 }
