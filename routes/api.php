@@ -19,7 +19,7 @@ use App\Http\Controllers\CommentController;
 //Display all the blogs
 Route::get('/blogs', [BlogController::class, 'index']);
 
-//Display single blog with comment(s)
+//Display single blog with comment(s) using the slug
 Route::get('/blog/{blog:slug}', [BlogController::class, 'show']);
 
 
