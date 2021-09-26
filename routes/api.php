@@ -19,8 +19,14 @@ use App\Http\Controllers\CommentController;
 //Display all the blogs
 Route::get('/blogs', [BlogController::class, 'index']);
 
+
+
 //Display single blog with comment(s) using the slug
 Route::get('/blog/{blog:slug}', [BlogController::class, 'show']);
+
+//Alternative method which involves using blog ID to show single blog with comments
+Route::get('/blog/single/{id}', [BlogController::class, 'single']);
+
 
 
 //Store new comment
